@@ -1,0 +1,63 @@
+{{> header}}
+
+<main class="content">
+
+  <section class="new-container">
+    <div class="name-container">
+      <h1 class="my-name"><u><em>Admin</em></u></h1>
+
+      <div class="info-container">
+
+        <form>
+
+          <h2>Trip: {{this.tid}}</h2>
+
+            <div class="entity-table">
+              <table style="width:100%">
+                <tr>
+                  <th>tripType</th>
+                  <th>distanceTraveled (miles)</th>
+                  <th>experienceLevel</th>
+                  <th>tripLength (days)</th>
+
+                </tr>
+                {{#each selectedTripInfo}}
+                <tr>
+                  <td><input type="text" id="trip-type" value="{{this.tripType}}"></td>
+                  <td><input type="number" id="distance" value="{{this.distanceTraveled}}"></td>
+                  <td><input type="text" id="level" value="{{this.experienceLevel}}"></td>
+                  <td><input type="number" id="length" value="{{this.tripLength}}"></td>
+                </tr>
+                {{/each}}
+              </table>
+            </div>
+            <br><br>
+            <div class="entity-table">
+              <table style="width:100%">
+                <tr>
+                  <th>destination</th>
+                  <th>maxAltitude</th>
+                  <th>anticipatedAvgTemperature</th>
+                  <th>anticipatedSkyCondition</th>
+                </tr>
+                {{#each selectedTripLocation}}
+                <tr>
+                  <td><input type="text" id="destination" value="{{this.destination}}"></td>
+                  <td><input type="number" id="altitude" value="{{this.maxAltitude}}"></td>
+                  <td><input type="number" id="avg-temp" value="{{this.anticipatedAvgTemperature}}"></td>
+                  <td><input type="text" id="sky-condition" value="{{this.anticipatedSkyCondition}}"></td>
+                </tr>
+                {{/each}}
+              </table>
+            </div>
+            <br> <br> <input type="submit" value="Update" onclick="filterTripsUpdate()"> <br> <br>
+
+        </form><br>
+        <p><small>Note: If no trip has appeared then the trip you are currently trying to update doesn't exist.
+                  If you would like to create a new trip go the the previous page.
+        </small><p>
+      </div>
+    </div>
+  </section>
+
+</main>

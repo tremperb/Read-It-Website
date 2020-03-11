@@ -19,7 +19,7 @@ module.exports = function(){
       //context.jsscripts = ["filterAdmin.js"];
       var mysql = req.app.get('mysql');
       context.userID = req.params.id;
-      res.status(200).render('menu', context);
+      res.status(200).render('mainPage', context);
 
     });
 

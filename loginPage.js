@@ -20,6 +20,7 @@ module.exports = function(){
 
       var context = {};
       var verify = false;
+      var idx;
       var mysql = req.app.get('mysql');
 
       getCurrentLog(res, mysql, context, done);
@@ -28,12 +29,13 @@ module.exports = function(){
           if(req.body.usernameInput == context.getLoginDB[i].userName) {
             if(req.body.passwordInput == context.getLoginDB[i].userPassword) {
               verify = true;
+              idx = i;
             }
           }
         }
         if(verify == true) {
           console.log("\nSuccessful Login\n");
-          res.redirect('/home'); //change later to redirect to menu
+          res.redirect('/home/' + context.getLoginDB[idx].userID); //change later to redirect to menu
         }
         else {
           console.log("\nFailure\n");

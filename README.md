@@ -21,3 +21,15 @@ maybe:
 express-session
 
 https://tools.engr.oregonstate.edu/phpMyAdmin/index.php
+
+# Login Credentials
+Username: tremperb      Password: 1234_tremp
+--------------------------------------------
+Username: swensonh      Password: 1234_swens
+--------------------------------------------
+Username: carlsons      Password: 1234_carl
+--------------------------------------------
+Username: raos          Password: 1234_shay
+--------------------------------------------
+Username: saechaoj      Password: 1234_saech
+--------------------------------------------

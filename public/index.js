@@ -10,13 +10,13 @@ function getPackingList() {
   }
 }
 
-function getLogin() {
+function updateMenu(uID) {
   $.ajax({
-    url: '/login/authentication',
+    url: '/menu/' + uID,
     type: 'PUT',
-    data: $('#get-login').serialize(),
+    data: $('#update-menu').serialize(),
     success: function(result) {
-      window.location = '/';
+      window.location = '/menu/' + uID;
     }
   })
 

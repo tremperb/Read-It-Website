@@ -34,16 +34,22 @@ var bodyParser = require('body-parser');
 //////////////////////
 
 //No need to edit this one
-app.get('/', function (req, res, next) {
-  res.status(200).render('mainPage');
+
+app.use('/', require('./loginPage.js'));
+
+app.get('/home', function (req, res, next) {
+
+    res.status(200).render('mainPage');
+
 });
 
 //Change style to app.use when set up like others
+
+
 app.get('/bookTrip', function(req, res, next) {
   res.status(200).render('bookTrip');
 });
 
-app.use('/login', require('./loginPage.js'));
 
 app.use('/participants', require('./participants.js'));
 app.use('/tripInfo', require('./tripInfo.js'));

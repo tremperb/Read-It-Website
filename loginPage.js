@@ -33,7 +33,7 @@ module.exports = function(){
         }
         if(verify == true) {
           console.log("\nSuccessful Login\n");
-            res.redirect('/tripInfo'); //change later to redirect to menu
+          res.redirect('/home'); //change later to redirect to menu
         }
         else {
           console.log("\nFailure\n");
@@ -42,7 +42,6 @@ module.exports = function(){
         }
 
       }
-
 
     });
 

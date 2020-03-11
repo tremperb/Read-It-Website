@@ -9,3 +9,16 @@ function getPackingList() {
     listContainer.style.display = "none";
   }
 }
+
+function getLogin() {
+  $.ajax({
+    url: '/login/authentication',
+    type: 'PUT',
+    data: $('#get-login').serialize(),
+    success: function(result) {
+      window.location = '/';
+    }
+  })
+
+  return false;
+}

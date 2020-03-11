@@ -11,37 +11,37 @@
         <div class="highlight-container" style="text-align: center;">
           <h2>Select Your Highlight Colors</h2>
 
-          <h4><u>1</u></h4>
-          <select class="menu-select" name="h1Input">
+          <label for="menu-select"><strong>1: <strong></label>
+          <select class="menu-select" name="h1Input" label="hello">
             <option>{{this.highlightOne}}</option>
             <option>Red</option>
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
-          <h4><u>2</u></h4>
+          </select> <br><br>
+          <label for="menu-select"><strong>2: <strong></label>
           <select class="menu-select" name="h2Input">
             <option>{{this.highlightTwo}}</option>
             <option>Red</option>
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
-          <h4><u>3</u></h4>
+          </select> <br><br>
+          <label for="menu-select"><strong>3: <strong></label>
           <select class="menu-select" name="h3Input">
             <option>{{this.highlightThree}}</option>
             <option>Red</option>
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
+          </select> <br><br>
         </div>
         <br>
 
         <div class="block-container" style="text-align: center;">
           <h2>Select Your Section Blocking Colors</h2>
 
-          <h4><u>1</u></h4>
+          <label for="menu-select"><strong>1: <strong></label>
           <select class="menu-select" name="b1Input">
             <option>{{this.blockOne}}</option>
             <option>Black</option>
@@ -49,8 +49,8 @@
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
-          <h4><u>2</u></h4>
+          </select> <br><br>
+          <label for="menu-select"><strong>2: <strong></label>
           <select class="menu-select" name="b2Input">
             <option>{{this.blockTwo}}</option>
             <option>Black</option>
@@ -58,8 +58,8 @@
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
-          <h4><u>3</u></h4>
+          </select> <br><br>
+          <label for="menu-select"><strong>3: <strong></label>
           <select class="menu-select" name="b3Input">
             <option>{{this.blockThree}}</option>
             <option>Black</option>
@@ -67,22 +67,22 @@
             <option>Blue</option>
             <option>Green</option>
             <option>Yellow</option>
-          </select>
+          </select> <br><br>
         </div>
         <br>
         <div class="font-container" style="text-align: center;">
           <h2>Select Your Desired Font</h2>
-
+          <label for="menu-select"><strong>Font: <strong></label>
           <select class="menu-select" name="fontInput">
             <option>{{this.newFont}}</option>
             <option>Open Dyslexic</option>
             <option>Comic Sans</option>
-          </select>
+          </select> <br><br>
 
         </div>
 
         <div class="submit-container" id="submit-container" style="text-align: center;">
-            <br> <br> <input type="submit" value="Update" onclick="return updateMenu({{this.userID}})"> <br> <br>
+            <br> <br> <input type="submit" value="Update" onclick="return updateMenu({{this.userID}})"  class="button"> <br> <br>
         </div>
         {{/each}}
       </form>

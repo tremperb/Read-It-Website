@@ -25,7 +25,7 @@ module.exports = function(){
       var count = 0;
       //context.jsscripts = ["filterAdmin.js"];
       var mysql = req.app.get('mysql');
-      res.status(200).render('404', context);
+      res.status(200).render('error404', context);
 
     });
 

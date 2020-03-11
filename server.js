@@ -48,17 +48,6 @@ app.use('/menu', require('./menuPage.js'));
 //Change style to app.use when set up like others
 
 
-app.get('/bookTrip', function(req, res, next) {
-  res.status(200).render('bookTrip');
-});
-
-
-app.use('/participants', require('./participants.js'));
-app.use('/tripInfo', require('./tripInfo.js'));
-app.use('/admin', require('./admin.js'));
-
-
-
 app.get('*', function (req, res) {
   res.status(404).render('error404');
 });

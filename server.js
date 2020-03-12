@@ -36,14 +36,11 @@ var bodyParser = require('body-parser');
 //No need to edit this one
 
 app.use('/', require('./loginPage.js'));
-/*
-app.get('/home', function (req, res, next) {
 
-    res.status(200).render('mainPage');
-
-});*/
+app.use('/createAccount', require('./createAccountPage.js'));
 
 app.use('/home', require('./homePage.js'));
+
 app.use('/menu', require('./menuPage.js'));
 //Change style to app.use when set up like others
 

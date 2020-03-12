@@ -113,11 +113,6 @@ table, th, td {
   border-radius: 5px;
 }
 
-.output-text {
-  font-family: 'open-dyslexic';
-}
-
-
 .button {
   background-color: #4CAF50; /* Green */
   border: none;

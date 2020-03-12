@@ -95,6 +95,21 @@ table, th, td {
   border-radius: 5px;
 }
 
+.container-main-input .output-text{
+  resize: none;
+  outline: none;
+  width: 95%;
+  padding: 10px;
+  border: none;
+  height: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+
 .button {
   background-color: #4CAF50; /* Green */
   border: none;

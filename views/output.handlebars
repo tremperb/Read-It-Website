@@ -1,0 +1,36 @@
+{{> header}}
+
+<main class="content">
+
+  <section class="new-container">
+    <div class="name-container">
+      <h2 class="my-name"><u><em>Read-It</em></u></h2>
+
+      <h3>Your Input</h3>
+      <div class="container-main-input" id="container-main-input" style="background-color: white;">
+
+        <textarea readonly placeholder="Please enter your input here..."class="input-text" id = "input-text" name="message" rows="20">{{this.inputText}}</textarea>
+        {{#each MenuInfo}}
+        <h3>Selected Highlights</h3>
+        <label for="userName">1: </label><input readonly type="text" id="userName" value="{{this.highlightOne}}"><br><br>
+        <label for="userName">2: </label><input readonly type="text" id="userName" value="{{this.highlightTwo}}"><br><br>
+        <label for="userName">3: </label><input readonly type="text" id="userName" value="{{this.highlightThree}}"><br><br>
+
+        <h3>Selected Blocking</h3>
+        <label for="userName">1: </label><input readonly type="text" id="userName" value="{{this.blockOne}}"><br><br>
+        <label for="userName">2: </label><input readonly type="text" id="userName" value="{{this.blockTwo}}"><br><br>
+        <label for="userName">3: </label><input readonly type="text" id="userName" value="{{this.blockThree}}"><br><br>
+
+        <h3>Selected Font</h4>
+          <label for="userName">1: </label><input readonly type="text" id="userName" value="{{this.newFont}}"><br><br>
+        {{/each}}
+      </div>
+      <h3>Your Output</h3>
+      <div class="container-main-input" style="background-color: white;">
+        <textarea readonly class="output-text" id="output-text" name="message" rows="20">{{this.inputText}}</textarea>
+      </div>
+
+    </div>
+  </section>
+
+</main>

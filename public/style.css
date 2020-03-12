@@ -1,5 +1,7 @@
+@font-face { font-family: open-dyslexic; src: url('/OpenDyslexic-Regular.otf'); }
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'open-dyslexic';
   margin: 0;
 }
 
